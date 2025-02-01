@@ -1,0 +1,21 @@
+ALTER TABLE users
+ADD CONSTRAINT fk_user_role
+FOREIGN KEY (role_id)
+REFERENCES roles(id)
+ON DELETE RESTRICT
+ON UPDATE CASCADE;
+
+ALTER TABLE orders
+ADD CONSTRAINT fk_order_statusorder
+FOREIGN KEY (status_id)
+REFERENCES statusorder(id)
+ON DELETE RESTRICT
+ON UPDATE CASCADE;
+
+
+ALTER TABLE drones
+ADD CONSTRAINT fk_drone_statusdrone
+FOREIGN KEY (status_id)
+REFERENCES statusdrone(id)
+ON DELETE RESTRICT
+ON UPDATE CASCADE;
