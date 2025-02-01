@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доставка Дронами</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать в мир доставки дронами!</h1>
+    </header>
+    <main>
+        <section class="description">
+            <h2>Что такое доставка дронами?</h2>
+            <p>
+                Доставка дронами — это инновационный способ быстрой и безопасной транспортировки товаров прямо к вашей двери. 
+                Использование беспилотных летательных аппаратов позволяет минимизировать время доставки и уменьшить нагрузку на традиционные логистические системы.
+            </p>
+            <p>
+                Это особенно полезно для доставки медицинских препаратов, продуктов питания и других важных грузов в труднодоступные районы.
+            </p>
+        </section>
+        <section class="actions">
+            <button class="register-btn">Регистрация</button>
+            <button class="login-btn">Вход</button>
+        </section>
+
+        <div id="registerModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Регистрация</h2>
+                <form id="registerForm">
+                    <label for="regUsername">Имя пользователя:</label>
+                    <input type="text" id="regUsername" name="regUsername" required><br><br>
+                    
+                    <label for="regPassword">Пароль:</label>
+                    <input type="password" id="regPassword" name="regPassword" required><br><br>
+                    
+                    <label for="regPhone">Телефон:</label>
+                    <input type="tel" id="regPhone" name="regPhone" required><br><br>
+                    
+                    <label for="regRole">Роль:</label>
+                    <select id="regRole" name="regRole" required>
+                        <option value="client">Клиент</option>
+                        <option value="operator">Оператор</option>
+                    </select><br><br>
+                    
+                    <button type="submit">Зарегистрироваться</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Вход</h2>
+                <form id="loginForm">
+                    <label for="LoginUsername">Имя пользователя:</label>
+                    <input type="text" id="LoginUsername" name="LoginUsername" required><br><br>
+                    
+                    <label for="LoginPassword">Пароль:</label>
+                    <input type="password" id="LoginPassword" name="LoginPassword" required><br><br>
+                    
+                    <button type="submit">Войти</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

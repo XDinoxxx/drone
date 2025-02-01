@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админка</title>
+    <link rel="stylesheet" href="../styles/admin_style.css">
+</head>
+<body>
+    <header>
+        <h1>Админка: Управление дронами</h1>
+    </header>
+    <main>
+        <section class="drone-form">
+            <h2>Добавить нового дрона</h2>
+            <form id="addDroneForm">
+                <label for="model">Модель:</label>
+                <input type="text" id="model" name="model" required><br><br><br><br>
+
+                <button type="submit">Добавить дрона</button>
+            </form>
+        </section>
+
+        <section class="drone-list">
+            <h2>Список всех дронов</h2>
+            <div id="droneList"></div>
+        </section>
+    </main>
+
+    <script src="../scripts/admin_script.js"></script>
+</body>
+</html>
